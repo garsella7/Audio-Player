@@ -1,0 +1,13 @@
+body{
+	background-image: url(../image/background.png);"> 
+}
+#playlist{
+    list-style: none;
+}
+#playlist li a{
+    color:white;
+    text-decoration: none;
+}
+#playlist .current-song a{
+    color:red;
+}

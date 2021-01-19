@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play Audio with HTML</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="./favicon/image.png" rel="icon" type="image/png" />
+</head>
+<body>
+    <center><br>
+        <img src="./image/Nissa Sabyan.jpg"><br><br>
+        <strong><font color="white">PLAY</strong><br>
+        <audio src="" controls id="audioPlayer" >
+            Ouch Sorry, your browser does not support html :)
+        </audio><br>
+        <a href="#" onclick="playlist.prevTrack();"><font color="white">Previous</a> |
+        <a href="#" onclick="playlist.nextTrack();"><font color="white">Next</a> |
+        <a href="#" onclick="playlist.toggleShuffle();"><font color="white">At Random</a>
+    </center>
+
+    <ul id="playlist">
+        <strong><font color="white">Lagu Nissa Sabyan</strong></font>
+        <hr>
+        <ol>
+            <font color="gray">
+            <li><a href="https://archive.org/download/nissa-sabyan-ya-maulana_202008/Nissa%20Sabyan%20-%20Deen%20Salam.mp3">Nissa Sabyan Deen Salam</a></li>
+            <li><a href="https://archive.org/download/nissa-sabyan-ya-maulana_202008/Nissa%20Sabyan%20-%20Qomarun.mp3">Nissa Sabyan Qomarun</a></li>
+            <li><a href="https://archive.org/download/nissa-sabyan-ya-maulana_202008/Nissa%20Sabyan%20-%20Rohman%20Ya%20Rohman.mp3">Nissa Sabyan Rohman Ya Rohman</a></li>
+            <li><a href="https://archive.org/download/nissa-sabyan-ya-maulana_202008/Nissa%20Sabyan%20-%20Ya%20Asyiqal.mp3">Nissa Sabyan Ya Asyiqal</a></li>
+            <li><a href="https://archive.org/download/nissa-sabyan-ya-maulana_202008/Nissa%20Sabyan%20-%20Ya%20Jamalu.mp3">Nissa Sabyan Ya jamalu</a></li>
+            <li><a href="https://archive.org/download/nissa-sabyan-ya-maulana_202008/Nissa%20Sabyan%20-%20Ya%20Maulana.mp3">Nissa Sabyan Ya Maulana</a></li>
+            <li><a href="https://archive.org/download/NissaSabyansholawatmerdu/Nissa%20Sabyan%20-%20Ahmad%20Ya%20Habibi.mp3">Nissa Sabyan Ahmad Ya Habibi</a></li>
+            <li><a href="https://archive.org/download/NissaSabyansholawatmerdu/Nissa%20Sabyan%20-%20Akad%20%28cover%29.mp3">Nissa Sabyan Akad</a></li>
+            <li><a href="https://archive.org/download/NissaSabyansholawatmerdu/Nissa%20Sabyan%20-%20Kun%20Anta%20%28cover%29.mp3">Nissa Sabyan Ku Anta</a></li>
+            <li><a href="https://archive.org/download/NissaSabyansholawatmerdu/Nissa%20Sabyan%20-%20Ya%20Thoyiba.mp3">Nissa Sabyan Ya Thoyiba</a></li>
+        </ol>   
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="js/audioPlayer.js"></script>
+    <script>
+        var config = {
+            autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist();
+    </script>
+
+</body>
+</html>
